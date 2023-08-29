@@ -1,0 +1,92 @@
+/* Reset default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main app container */
+  .todo-app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Todo list container */
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Todo item */
+  .todo-item {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on todo item */
+  .todo-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Completed todo item */
+  .todo-item.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Todo item checkbox */
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Todo item text */
+  .todo-item .text {
+    flex-grow: 1;
+  }
+  
+  /* Todo item delete button */
+  .todo-item .delete-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Delete button hover effect */
+  .todo-item .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Add task section */
+  .add-task {
+    margin-top: 20px;
+  }
+  
+  .add-task input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+  }
+  
+  .add-task button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
